@@ -9,14 +9,14 @@ module.exports = {
 			network_id: "*" // Match any network id
 		},
 
-		mainnet: {			
+		rinkeby: {			
 			provider: function () {				
 			   return new HDWalletProvider(					
 				  [process.env.DEPLOYER_PRIVATE_KEY],					
-				  `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}` // URL to Ethereum Node				
+				  `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_API_KEY}` // URL to Ethereum Node				
 			   )			
 			},			
-			network_id: 1		
+			network_id: 4		
 		 },
 
 		matic: {
