@@ -14,7 +14,7 @@ import '../App.css'
 import Navbar from './Navbar'
 
 // Import ABI + Config
-import OpenPunks from '../abis/OpenPunks.json'
+import OpenPunks from '../abis/Moon_Frenz.json'
 import config from '../config.json'
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
 	const loadBlockchainData = async (_web3, _account, _networkId) => {
 		// Fetch Contract, Data, etc.
 		try {
-			const openPunks = new _web3.eth.Contract(OpenPunks.abi, OpenPunks.networks[_networkId].address)
+			const openPunks = new _web3.eth.Contract(Moon_Frenz.abi, Moon_Frenz.networks[_networkId].address)
 			setOpenPunks(openPunks)
 
 			const maxSupply = await openPunks.methods.maxSupply().call()
