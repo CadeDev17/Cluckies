@@ -14,7 +14,7 @@ import '../App.css'
 import Navbar from './Navbar'
 
 // Import ABI + Config
-import OpenPunks from '../abis/Moon_Frenz.json'
+import Moon_Frenz from '../abis/Moon_Frenz.json'
 import config from '../config.json'
 
 function App() {
