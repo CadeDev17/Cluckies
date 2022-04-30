@@ -126,7 +126,7 @@ function App() {
 		}
 
 		// Mint NFT
-		if (openPunks && account) {
+		if (Moon_Frenz && account) {
 			setIsMinting(true)
 			setIsError(false)
 
