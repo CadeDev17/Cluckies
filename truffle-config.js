@@ -9,14 +9,16 @@ module.exports = {
 			network_id: "*" // Match any network id
 		},
 
-		mainnet: {			
-			provider: function () {				
-			   return new HDWalletProvider(					
-				  [process.env.DEPLOYER_PRIVATE_KEY],					
-				  `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}` // URL to Ethereum Node				
-			   )			
-			},			
-			network_id: 1		
+		mainnet: {						
+			provider: function () {							   
+			   return new HDWalletProvider(									  
+				  [process.env.DEPLOYER_PRIVATE_KEY],									  
+				  `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}` // URL to Ethereum Node							   
+			   )						
+			},						
+			network_id: 1,
+			gasPrice: 80000000000,
+			gas: 6721975				 
 		 },
 
 		matic: {
