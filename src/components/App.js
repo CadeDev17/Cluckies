@@ -130,7 +130,7 @@ function App() {
 			setIsMinting(true)
 			setIsError(false)
 
-			await openPunks.methods.mint(10).send({ from: account, value: 0 })
+			await openPunks.methods.mint(1).send({ from: account, value: 0 })
 				.on('confirmation', async () => {
 					const maxSupply = await openPunks.methods.maxSupply().call()
 					const totalSupply = await openPunks.methods.totalSupply().call()
