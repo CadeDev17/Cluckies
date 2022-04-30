@@ -130,13 +130,13 @@ function App() {
 			setIsMinting(true)
 			setIsError(false)
 
-			await openPunks.methods.mint(10).send({ from: account, value: 0 })
+			await openPunks.methods.mint(1).send({ from: account, value: .015 })
 				.on('confirmation', async () => {
-					const maxSupply = await Moon_Frenz.methods.maxSupply().call()
-					const totalSupply = await Moon_Frenz.methods.totalSupply().call()
+					const maxSupply = await openPunks.methods.maxSupply().call()
+					const totalSupply = await openPunks.methods.totalSupply().call()
 					setSupplyAvailable(maxSupply - totalSupply)
 
-					const ownerOf = await Moon_Frenz.methods.walletOfOwner(account).call()
+					const ownerOf = await openPunks.methods.walletOfOwner(account).call()
 					setOwnerOf(ownerOf)
 				})
 				.on('error', (error) => {
