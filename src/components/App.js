@@ -126,11 +126,11 @@ function App() {
 		}
 
 		// Mint NFT
-		if (Moon_Frenz && account) {
+		if (openPunks && account) {
 			setIsMinting(true)
 			setIsError(false)
 
-			await Moon_Frenz.methods.mint(10).send({ from: account, value: 0 })
+			await openPunks.methods.mint(10).send({ from: account, value: 0 })
 				.on('confirmation', async () => {
 					const maxSupply = await Moon_Frenz.methods.maxSupply().call()
 					const totalSupply = await Moon_Frenz.methods.totalSupply().call()
