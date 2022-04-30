@@ -120,8 +120,8 @@ function App() {
 			return
 		}
 
-		if (ownerOf.length > 0) {
-			window.alert('You\'ve already minted!')
+		if (ownerOf.length > 11) {
+			window.alert('You\'ve minted enough!')
 			return
 		}
 
@@ -130,13 +130,13 @@ function App() {
 			setIsMinting(true)
 			setIsError(false)
 
-			await openPunks.methods.mint(5).send({ from: account, value: 0 })
+			await openPunks.methods.mint(10).send({ from: account, value: 0 })
 				.on('confirmation', async () => {
-					const maxSupply = await openPunks.methods.maxSupply().call()
-					const totalSupply = await openPunks.methods.totalSupply().call()
+					const maxSupply = await Moon_Frenz.methods.maxSupply().call()
+					const totalSupply = await Moon_Frenz.methods.totalSupply().call()
 					setSupplyAvailable(maxSupply - totalSupply)
 
-					const ownerOf = await openPunks.methods.walletOfOwner(account).call()
+					const ownerOf = await Moon_Frenz.methods.walletOfOwner(account).call()
 					setOwnerOf(ownerOf)
 				})
 				.on('error', (error) => {
