@@ -166,105 +166,523 @@ function App() {
 	return (
 		<div>
 			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
-			<main>
-				<section id='welcome' className='welcome'>
 
-					<Row className='header my-3 p-3 mb-0 pb-0'>
-						<Col xs={12} md={12} lg={8} xxl={8}>
-							<h1>Moon FrenZ</h1>
-							<p className='sub-header'>Just frenZ vibing on the moon</p>
-						</Col>
-						<Col className='flex social-icons'>
-							<a
-								href="https://twitter.com/moonfrenz"
-								target='_blank'
-								className='circle flex button'>
-								<img src={twitter} alt="Twitter" />
-							</a>
-							<a
-								href={`https://opensea.io/collection/proof-moonbirds`}
-								target='_blank'
-								className='circle flex button'>
-								<img src={opensea} alt="Opensea" />
-							</a>
-						</Col>
-					</Row>
+			<header class="header">
+				<a href="#" class="logo"> <i class="fa-brands fa-earlybirds"></i> Cluckies </a>
 
-					<Row className='flex m-3'>
-						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
-							<img
-								src={`https://gateway.pinata.cloud/ipfs/QmXQ2Yk3TQP619ievD5jDuGLtE2JuZuUqUbP3WztDEwsBb/${counter}.png`}
-								alt="Moon Frenz"
-								className='showcase'
-							/>
-						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4}>
-							<p className='text'>
-								Moon Frenz are a collection of 3,333 frenz on the ethereum blockchain for only 0.015 ETH. Not affiliated with MoonBirds or VeeFriends but love to make frenz with all of our fellow moon pals ;)
-							</p>
-							<a href="#about" className='button mx-3'>Learn More!</a>
-						</Col>
-					</Row>
+				<nav class="navbar">
+					<a href="#home">The Farm</a>
+					<a href="#mint">Mint</a>
+					<a href="#rarities">Rarities</a>
+					<a href="#chickencoop">The Chicken Coop</a>
+					<a href="#roadmap">Roadmap</a>
+					<a href="#faq">FAQ</a>
+				</nav>
 
-				</section>
-				<section id='about' className='about'>
+				<div class="icons">
+					<a id="menu-btn" class="fas fa-bars"></a>
+					<a href="#" id="search-btn" class="fa-brands fa-twitter"></a>
+					<a href="https://discord.gg/ZHEpvSVCxt" id="cart-btn" class="fa-brands fa-discord"></a>
+					<a href="#" id="login-btn" class="fa-brands fa-fort-awesome"></a>
+				</div>
+			</header>
 
-					<Row className='flex m-3'>
-						<h2 className='text-center p-3'>Moon FrenZ TAKEOVER</h2>
-						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
-							<img src={showcase} alt="Multiple Crypto Punks" className='showcase' />
-						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4}>
-							{isError ? (
-								<p>{message}</p>
-							) : (
-								<div>
-									<h3>How to become frenz?</h3>
-									<ul>
-										<li>You have to be a pure NFT/crypto degen. Full on 3am, weed smoking, coffee drinking, icytools running, you know the deal.</li>
-										<li>Although there is NO LIMIT, owning just 1 Moon Frenz NFT will give you access to a fren group of 3,333 degens to keep you company during degen hours</li>
-										<li>You dont give frenz a roadmap, especially since we are already on the moon. We are just looking for some fellow Moon Frenz</li>
-									</ul>
+			{/* Home section */}
+			<section class="home" id="home">
+				<div class="slides-container">
 
-									{isMinting ? (
-										<Spinner animation="border" className='p-3 m-2' />
-									) : (
-										<button onClick={mintNFTHandler} className='button mint-button mt-3'>Mint</button>
-									)}
+					<div class="slide active">
+						<div class="content">
+							<div class="slideimg">
+								<img src="img/main.png">
+							</div>
+							<h3>Cluck, grab one of our 1,777 Cluckies and become the first mothercluckers on the Ethereum mainnet.</h3>
+								<a href="#" class="btn">twitter</a>
+								<a href="#" class="btn">opensea</a>
+						</div>
+						<div class="img">
+							<img src="img/main1.png" alt="">
+						</div>
+					</div>
 
-									{ownerOf.length > 0 &&
-										<p><small>View your NFT on
-											<a
-												href={`${openseaURL}/assets/${openPunks._address}/${ownerOf[0]}`}
-												target='_blank'
-												style={{ display: 'inline-block', marginLeft: '3px' }}>
-												OpenSea
-											</a>
-										</small></p>}
+					<div class="slide">
+						<div class="content">
+							<div class="slideimg">
+								<img src="img/main.png">
+							</div>
+							<h3>Hey clucker, make sure youre following us on twitter and clucking around in our discord with the rest of the mothercluckers</h3>
+								<a href="#" class="btn">twitter</a>
+								<a href="#" class="btn">opensea</a>
+						</div>
+						<div class="img">
+							<img src="img/main2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="next-slide"class="fas fa-angle-right" onclick="next()"></div>
+				<div id="prev-slide"class="fas fa-angle-left" onclick="next()"></div>
+			</section>
+
+
+			{/* minting button (takes you to mintng page) */}
+			<section class="banner-container" id="mint">
+				<div class="banner">
+					<img src="img/home.jpeg">
+					<div class="content">
+						<span>Supply: 1,777</span>
+						<h3>Price: 0.02 ETH</h3>
+						<a href="#" class="btn">MINT</a>
+					</div>
+				</div> 
+			</section>
+
+
+
+			{/* rarities section */}
+			<section class="story" id="rarities">
+				<h1 class="title"><span>Rarities</span><a href="#">view on opensea >></a> </h1>
+
+				<div class="box-container">
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-1"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide.png">
+						</div>
+						<div class="content">
+							<h3>Common Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i> 
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-2"></a>
+							<a class="fa-solid fa-5"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide1.png">
+						</div>
+						<div class="content">
+							<h3>Uncommon Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i> 
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-5"></a>
+							<a class="fa-solid fa-0"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide2.png">
+						</div>
+						<div class="content">
+							<h3>Rare Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-7"></a>
+							<a class="fa-solid fa-5"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide3.png">
+						</div>
+						<div class="content">
+							<h3>Epic Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i> 
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-1"></a>
+							<a class="fa-solid fa-0"></a>
+							<a class="fa-solid fa-0"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide4.png">
+						</div>
+						<div class="content">
+							<h3>Mythic Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-5"></a>
+							<a class="fa-solid fa-5"></a>
+							<a class="fa-solid fa-5"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide5.png">
+						</div>
+						<div class="content">
+							<h3>Exceptional Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-7"></a>
+							<a class="fa-solid fa-7"></a>
+							<a class="fa-solid fa-7"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide6.png">
+						</div>
+						<div class="content">
+							<h3>Legendary Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icons">
+							<a class="fa-solid fa-1"></a>
+							<a class="fa-solid fa-1"></a>
+							<a class="fa-solid fa-1"></a>
+							<a class="fa-solid fa-1"></a>
+						</div>
+						<div class="img">
+							<img src="img/slide7.png">
+						</div>
+						<div class="content">
+							<h3>1/1 Cluckie</h3>
+							<div class="stars">
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+								<i class="fa fa-star"></i>  
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section id="chickencoop">
+				<h1 class="title"> The <span>Chicken Coop</span> <a href="https://discord.gg/ZHEpvSVCxt">Join the chicken coop >></a> </h1>
+			</section>
+			<section class="firepit">
+				<div class="content">
+					<h3>The MotherCluckin Chicken Coop</h3>
+					<p>
+						Here is where we come together as mother cluckers
+						and cluck around in the NFT space.
+					</p>
+					<br><br>
+					<p>
+						Just cluck it, we do what we want and dont give a cluck 
+						what anyone thinks. Come be frens and lay $EGGS all around
+						the ETH mainnet with us.
+					</p>
+					<a href="https://discord.gg/ZHEpvSVCxt" class="btn">Discord</a>
+				</div>
+
+				<div class="img">
+					<img src="img/fire pits.png"/>
+				</div>
+			</section>
+
+
+
+			<section>
+				<h1 class="title">roadmap</h1>
+			</section>
+
+			<section class="roadmap" id="roadmap">
+				<div class="swiper mySwiper roadmap-slider">
+					<div class="swiper-wrapper wrapper">
+
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide11.png">
+								<div class="user-info">
+									<h3>Building the coop</h3>
 								</div>
-							)}
-						</Col>
-					</Row>
+							</div>
+							<p>
+								The chicken coop consists of our discord, twitter,
+								website, and any other cluck'n social media platforms 
+								we want to be on.
+							</p> 
+							<br></br>
+							<p>
+								Once created, we will start collaborating
+								with other communities that are on brand with the mother clucker 
+								mentality. mfrs get free whitelist spots. you're welcome.
+							</p>
+						</div>
 
-					<Row style={{ marginTop: "100px" }}>
-						<Col>
-							{openPunks &&
-								<a
-									href={`${explorerURL}/address/${openPunks._address}`}
-									target='_blank'
-									className='text-center'>
-									{openPunks._address}
-								</a>
-							}
-						</Col>
-					</Row>
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide44.png"/>
+								<div class="user-info">
+									<h3>Laying Season</h3>
+								</div>
+							</div>
+							<p>- Date: tbd</p>
+							<p>- Supply: 1,777</p>
+							<p>- Free-Mint Supply: 77</p>
+							<p>- Presale: 700 (0.01 ETH)</p>
+							<p>- Public Sale: 1,000 (0.02 ETH)</p>
+						</div>
 
-				</section>
-			</main>
-			<footer>
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide55.png"/>
+								<div class="user-info">
+									<h3>Staking for $EGGS</h3>
+								</div>
+							</div>
+							<p>Now that you are a true mother clucker, 
+								sit your ass down in a nest and start laying 
+								some $EGGS so you can get your baby clucks.
+							</p>
+						</div>
 
-			</footer>
-		</div>
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide66.png"/>
+								<div class="user-info">
+									<h3>MERCH</h3>
+								</div>
+							</div>
+							<p>Community will pick ALL the merch options we will have on our merchant site</p>
+						</div>
+
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide71.png"/>
+								<div class="user-info">
+									<h3>Baby Cluck available for staked Cluckies</h3>
+								</div>
+							</div>
+							<p>
+								Simple enough, stake your Cluckie, lay some $EGGS and then wait
+								for them to hatch and BOOM you are starting your own cluck'n 
+								family
+							</p>
+						</div>
+
+						<div class="swiper-slide slide">
+							<div class="user">
+								<img src="img/slide99.jpeg"/>
+								<div class="user-info">
+									<h3>ROADMAP 2.Cluck</h3>
+								</div>
+							</div>
+							<p>Mother CLUCK!! We are expanding and building so much we will need a new fuck'n roadmap!</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="teams">
+				<h1 class="title">our <span>team</span> <a href="#">view all >></a></h1>
+
+
+				<div class="box-container">
+
+					<div class="box">
+						<div class="img">
+							<img src="img/founder.png">
+						</div>
+						<div class="content">
+							<div class="icons">
+								<a class="fas fa-calendar"></i>6+ yrs</a>
+								<a class="fas fa-user"></i>Cluckie Founder & Artist</a>
+							</div>
+							<h3>Master Cluck</h3>
+							<p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="img">
+							<img src="img/mainside.png">
+						</div>
+						<div class="content">
+							<div class="icons">
+								<a class="fas fa-calendar"></i>10+ yrs</a>
+								<a class="fas fa-user"></i>Cluckster Marketer</a>
+							</div>
+							<h3>Super Cluck</h3>
+							<p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="img">
+							<img src="img/owner.png">
+						</div>
+						<div class="content">
+							<div class="icons">
+								<a class="fas fa-calendar"></i>2+ yrs</a>
+								<a class="fas fa-user"></i>Cluckchain  Developer</a>
+							</div>
+							<h3>Cluck'n Clucker</h3>
+							<p>I like to cluck... i mean code.</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="img">
+							<img src="img/communitymanager.png">
+						</div>
+						<div class="content">
+							<div class="icons">
+								<a class="fas fa-calendar"></i>15+yrs</a>
+								<a class="fas fa-user"></i>Community  Manacluck</a>
+							</div>
+							<h3>Community Cluck</h3>
+							<p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="img">
+							<img src="img/developer.png">
+						</div>
+						<div class="content">
+							<div class="icons">
+								<a class="fas fa-calendar"></i>3+ yrs</a>
+								<a class="fas fa-user"></i>Cluckchain  Developer</a>
+							</div>
+							<h3>Cluck'n Dev</h3>
+							<p>
+								I have been clucking around in the web3 space for about 5 years now as 
+								a full time degen. 3 years ago I fell in love with the tech and never looked back.
+								Cluck Cluck MotherCluckers!
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<section id="faq">
+				<h1 class="title">FAQ <span>question</span> <a href="#">our notion page >></a></h1>
+			</section>
+
+			<section class="faq">
+				<div class="icons-container">
+					<div class="icons">
+						<i class="fas fa-bookmark"></i>
+						<h3>What are the clucking minting limits?</h3>
+						<p>Per wallet: unlimited // Per transaction: 10</p>
+					</div>
+
+					<div class="icons">
+						<i class="fas fa-money-bill-alt"></i>
+						<h3>What is the cost?</h3>
+						<p>Free: 77 / Public-Sale: 0.02 ETH</p>
+					</div>
+
+					<div class="icons">
+						<i class="fas fa-cookie"></i>
+						<h3>What is the total supply?</h3>
+						<p>1,777</p>
+					</div>
+				</div>
+			</section>
+
+			{/* <!-- footer section start --> */}
+
+			<section class="footer">
+				<div class="box-container">
+					<div class="box">
+						<h3>quick links</h3>
+							<a href="#home"> <i class="fa fa-arrow-right"></i>Home</a>
+							<a href="#mint"> <i class="fa fa-arrow-right"></i>Mint</a>
+							<a href="#rarities"> <i class="fa fa-arrow-right"></i>Rarities</a>
+							<a href="#chickencoop"> <i class="fa fa-arrow-right"></i>Chicken Coop</a>
+							<a href="#roadmap"> <i class="fa fa-arrow-right"></i>Roadmap</a>
+							<a href="#faq"> <i class="fa fa-arrow-right"></i>FAQ</a>
+					</div>
+
+					<div class="box">
+						<h3>extra links</h3>
+							<a href="#"> <i class="fa fa-arrow-right"></i> Our Notion Page</a>
+							<a href="#"> <i class="fa fa-arrow-right"></i> IMB Labs</a>
+							<a href="#"> <i class="fa fa-arrow-right"></i> OpenSea</a>
+							<a href="#"> <i class="fa fa-arrow-right"></i> terms or use</a>
+							<a href="#"> <i class="fa fa-arrow-right"></i> policy</a>
+					</div>
+
+					<div class="box">
+						<h3>follow us</h3>
+						<a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+						<a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+						<a href="#"> <i class="fab fa-discord"></i> Discord</a>
+						<a href="#"> <i class="fab fa-tiktok"></i> Tik Tok</a>
+					</div>
+			</div>
+			</section>
+
+			<section class="credit">created by <span>IMB Labs ®</span></section>
+
+			<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+				{/* <!-- custom ja file link --> */}
+				<script src="main.js"></script>
 	)
 }
 
