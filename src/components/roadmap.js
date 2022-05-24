@@ -4,17 +4,17 @@ const Roadmap = () => {
     return (
         <section>
             <section>
-                <h1 class="title">roadmap</h1>
+                <h1 className="title">roadmap</h1>
             </section>
 
-            <section class="roadmap" id="roadmap">
-                <div class="swiper mySwiper roadmap-slider">
-                    <div class="swiper-wrapper wrapper">
+            <section className="roadmap" id="roadmap">
+                <div className="swiper mySwiper roadmap-slider">
+                    <div className="swiper-wrapper wrapper">
 
-                        <div class="swiper-slide slide">
-                            <div class="user">
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide11.png"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>Building the coop</h3>
                                 </div>
                             </div>
@@ -31,10 +31,10 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="user">
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide44.png"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>Laying Season</h3>
                                 </div>
                             </div>
@@ -44,11 +44,11 @@ const Roadmap = () => {
                             <p>- Presale: 700 (0.01 ETH)</p>
                             <p>- Public Sale: 1,000 (0.02 ETH)</p>
                         </div>
-
-                        <div class="swiper-slide slide">
-                            <div class="user">
+Name
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide55.png"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>Staking for $EGGS</h3>
                                 </div>
                             </div>
@@ -58,20 +58,20 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="user">
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide66.png"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>MERCH</h3>
                                 </div>
                             </div>
                             <p>Community will pick ALL the merch options we will have on our merchant site</p>
                         </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="user">
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide71.png"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>Baby Cluck available for staked Cluckies</h3>
                                 </div>
                             </div>
@@ -82,10 +82,10 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="user">
+                        <div className="swiper-slide slide">
+                            <div className="user">
                                 <img src="img/slide99.jpeg"/>
-                                <div class="user-info">
+                                <div className="user-info">
                                     <h3>ROADMAP 2.Cluck</h3>
                                 </div>
                             </div>

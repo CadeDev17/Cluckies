@@ -3,10 +3,10 @@ const chickenCoop = () => {
     return (
         <section>
             <section id="chickencoop">
-                <h1 class="title"> The <span>Chicken Coop</span> <a href="https://discord.gg/ZHEpvSVCxt">Join the chicken coop</a> </h1>
+                <h1 className="title"> The <span>Chicken Coop</span> <a href="https://discord.gg/ZHEpvSVCxt">Join the chicken coop</a> </h1>
             </section>
-            <section class="firepit">
-                <div class="content">
+            <section className="firepit">
+                <div className="content">
                     <h3>The MotherCluckin Chicken Coop</h3>
                     <p>
                         Here is where we come together as mother cluckers
@@ -18,10 +18,10 @@ const chickenCoop = () => {
                         what anyone thinks. Come be frens and lay $EGGS all around
                         the ETH mainnet with us.
                     </p>
-                    <a href="https://discord.gg/ZHEpvSVCxt" class="btn">Discord</a>
+                    <a href="https://discord.gg/ZHEpvSVCxt" className="btn">Discord</a>
                 </div>
 
-                <div class="img">
+                <div className="img">
                     <img src="img/fire pits.png"/>
                 </div>
             </section>
