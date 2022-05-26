@@ -12,13 +12,13 @@ import '../App.css'
 
 // Import Components
 import Navbar from './Navbar'
-import Footer from './footer'
-import Faq from './faq'
-import Team from './team'
-import Roadmap from './roadmap'
-import ChickenCoop from './chickencoop'
-import Rarities from './rarities'
-import Home from './home'
+import Footer from './Footer'
+import Faq from './Faq'
+import Team from './Team'
+import Roadmap from './Roadmap'
+import ChickenCoop from './Chickencoop'
+import Rarities from './Rarities'
+import Home from './Home'
 
 
 // Import ABI + Config
@@ -176,11 +176,7 @@ function App() {
 
 			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
 
-			<Home/>
-
-			<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-			<script src="main.js"></script>	
+			<Home />
 			
 		</section>
 	)

@@ -44,7 +44,6 @@ const Roadmap = () => {
                             <p>- Presale: 700 (0.01 ETH)</p>
                             <p>- Public Sale: 1,000 (0.02 ETH)</p>
                         </div>
-Name
                         <div className="swiper-slide slide">
                             <div className="user">
                                 <img src="img/slide55.png"/>

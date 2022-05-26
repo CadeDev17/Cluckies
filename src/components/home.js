@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <section>
             <header className="header">
-                <a href="#" className="logo"> <i class="fa-brands fa-earlybirds"></i> Cluckies </a>
+                <a href="#" className="logo"> <i className="fa-brands fa-earlybirds"></i> Cluckies </a>
 
                 <nav className="navbar">
                     <a href="#home">The Farm</a>
@@ -24,21 +24,6 @@ const Home = () => {
             {/* Home section */}
             <section className="home" id="home">
                 <div className="slides-container">
-
-                    <div className="slide active">
-                        <div className="content">
-                            <div className="slideimg">
-                                <img src="img/main.png"/>
-                            </div>
-                            <h3>Cluck, grab one of our 1,777 Cluckies and become the first mothercluckers on the Ethereum mainnet.</h3>
-                                <a href="#" className="btn">twitter</a>
-                                <a href="#" className="btn">opensea</a>
-                        </div>
-                        <div className="img">
-                            <img src="img/main1.png" alt=""/>
-                        </div>
-                    </div>
-
                     <div className="slide">
                         <div className="content">
                             <div className="slideimg">
@@ -53,8 +38,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div id="next-slide"className="fas fa-angle-right" onClick="next()"></div>
-                <div id="prev-slide"className="fas fa-angle-left" onClick="next()"></div>
             </section>
         </section>
     )
