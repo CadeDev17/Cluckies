@@ -1,22 +1,28 @@
+import Owner from '../images/owner.png'
+import Developer from '../images/Developer.png'
+import Developer1 from '../images/Developer1.png'
+import communityManager from '../images/communitymanager.png'
+import Marketer from '../images/royalcluckie.png'
+
 
 const Team = () => {
     return (
         <section>
             <section className="teams">
-                <h1 className="title">our <span>team</span> <a href="#">view all </a></h1>
+                <h1 className="title">Our <span>team</span></h1>
             </section>
 
 
             <section>
-                <div className="box-container">
+                <div className="team-container">
 
-                    <div className="box">
-                        <div className="img">
-                            <img src="img/founder.png"/>
+                    <div className="team-box">
+                        <div className="team-img-container">
+                            <img className="teamImg" src={Owner}/>
                         </div>
-                        <div className="content">
+                        <div className="team-content">
                             <div className="icons">
-                                <a className="fas fa-calendar">6+ yrs</a>
+                                <a className="fas fa-calendar calendar-icon">6+ yrs</a>
                                 <a className="fas fa-user">Cluckie Founder / Artist</a>
                             </div>
                             <h3>Master Cluck</h3>
@@ -24,13 +30,13 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="box">
-                        <div className="img">
-                            <img src="img/mainside.png"/>
+                    <div className="team-box">
+                        <div className="team-img-container">
+                            <img className="teamImg" src={Marketer}/>
                         </div>
-                        <div className="content">
+                        <div className="team-content">
                             <div className="icons">
-                                <a className="fas fa-calendar">10+ yrs</a>
+                                <a className="fas fa-calendar calendar-icon">10+ yrs</a>
                                 <a className="fas fa-user">Cluckster Marketer</a>
                             </div>
                             <h3>Super Cluck</h3>
@@ -38,13 +44,13 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="box">
-                        <div className="img">
-                            <img src="img/owner.png"/>
+                    <div className="team-box">
+                        <div className="team-img-container">
+                            <img className="teamImg" src={Developer1}/>
                         </div>
-                        <div className="content">
+                        <div className="team-content">
                             <div className="icons">
-                                <a className="fas fa-calendar">2+ yrs</a>
+                                <a className="fas fa-calendar calendar-icon">2+ yrs</a>
                                 <a className="fas fa-user">Cluckchain  Developer</a>
                             </div>
                             <h3>Cluck'n Clucker</h3>
@@ -52,13 +58,13 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="box">
-                        <div className="img">
-                            <img src="img/communitymanager.png"/>
+                    <div className="team-box">
+                        <div className="team-img-container">
+                            <img className="teamImg" src={communityManager}/>
                         </div>
-                        <div className="content">
+                        <div className="team-content">
                             <div className="icons">
-                                <a className="fas fa-calendar">15+yrs</a>
+                                <a className="fas fa-calendar calendar-icon">15+yrs</a>
                                 <a className="fas fa-user">Community  Manacluck</a>
                             </div>
                             <h3>Community Cluck</h3>
@@ -66,21 +72,21 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="box">
-                        <div className="img">
-                            <img src="img/developer.png"/>
+                    <div className="team-box">
+                        <div className="team-img-container">
+                            <img className="teamImg" src={Developer}/>
                         </div>
-                        <div className="content">
+                        <div className="team-content">
                             <div className="icons">
-                                <a className="fas fa-calendar">3+ yrs</a>
+                                <a className="fas fa-calendar calendar-icon">3+ yrs</a>
                                 <a className="fas fa-user">Cluckchain  Developer</a>
-                            </div>
-                            <h3>Cluck'n Dev</h3>
-                            <p>
-                                I have been clucking around in the web3 space for about 5 years now as 
-                                a full time degen. 3 years ago I fell in love with the tech and never looked back.
-                                Cluck Cluck MotherCluckers!
-                            </p>
+                                <h3>Cluck'n Dev</h3>
+                                <p>
+                                    I have been clucking around in the web3 space for about 5 years now as 
+                                    a full time degen. 3 years ago I fell in love with the tech and never looked back.
+                                    Cluck Cluck MotherCluckers!
+                                </p>
+                            </div>    
                         </div>
                     </div>
 

@@ -1,3 +1,4 @@
+import coopImg from '../images/Coop.png'
 
 const chickenCoop = () => {
     return (
@@ -7,22 +8,19 @@ const chickenCoop = () => {
             </section>
             <section className="firepit">
                 <div className="content">
-                    <h3>The MotherCluckin Chicken Coop</h3>
+                    <h3>Coop Requirements:</h3>
                     <p>
-                        Here is where we come together as mother cluckers
-                        and cluck around in the NFT space.
+                        You must be an active mother clucker in the community and give the least amount of clucks.
                     </p>
                     <br></br>
                     <p>
-                        Just cluck it, we do what we want and dont give a cluck 
-                        what anyone thinks. Come be frens and lay $EGGS all around
-                        the ETH mainnet with us.
+                        Only 77 cluckers will be able to join The Chicken Coop and claim their ability to mint for FREE.
                     </p>
                     <a href="https://discord.gg/ZHEpvSVCxt" className="btn">Discord</a>
                 </div>
 
                 <div className="img">
-                    <img src="img/fire pits.png"/>
+                    <img src={coopImg}/>
                 </div>
             </section>
         </section>

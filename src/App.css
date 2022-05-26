@@ -16,7 +16,7 @@ body{
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     transition: .2s linear;
 }
@@ -66,6 +66,7 @@ section{
     cursor:pointer;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
     border:0.1rem solid rgba(0,0,0,0.7);
+    margin-right: 10px;
 }
 
 .btn:hover{
@@ -92,6 +93,8 @@ section{
     font-size: 2.4rem;
     font-weight: bolder;
     color: var(--Tusk);
+    text-decoration: none;
+
 }
 
 .header .logo i{
@@ -105,6 +108,7 @@ section{
     color: var(--Tusk);
     margin: 0 1rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .header .navbar a:hover{
@@ -116,6 +120,8 @@ section{
     margin-left: 1.7rem;
     cursor: pointer;
     color:var(--Tusk);
+    text-decoration: none;
+
 }
 
 .header .icons a:hover{
@@ -141,28 +147,29 @@ section{
 }
 
 .home{
-    padding-top: 14rem;
+    /* padding-top: 14rem; */
     background-color:var(--Tusk);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
+.homeImg {
+    width: 300px;
+    height: 300px;
+}
+
 .home .slides-container .slide{
     display:flex;
     align-items:center;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    display:none;
-}
-
-.home .slides-container .slide.active{
-   display: flex;
+    /* gap: 1.5rem; */
+    /* display:none; */
 }
 
 .home .slides-container .slide .content{
     flex: 1 1 40rem;
-    animation:fadeLeft .4s linear .4s backwards;
+    /* animation:fadeLeft .4s linear .4s backwards; */
 }
 
 
@@ -241,20 +248,21 @@ section{
     object-fit: cover;
 }
 
-.banner-container .banner .content{
+.banner-container .banner .mint-content{
     position: absolute;
-    top: 70%;
-    left: 4%;
+    top: 500px;
+    left: 50px;
     transform:translateY(-50%);
+    
 }
 
-.banner-container .banner .content h3{
+.banner-container .banner .mint-content h3{
     font-size: 3rem;
-    color: #000;
+    color: white;
     text-shadow:0 0.5rem 1rem rgba(0,0,0,0.7);
 }
 
-.banner-container .banner .content span{
+.banner-container .banner .mint-content span{
     font-size: 2.5rem;
     color: #000;;
     text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
@@ -264,6 +272,8 @@ section{
     transform:scale(1.2) rotate(-5deg);
 }
 
+
+/* RARITY SECTION */
 .story .box-container{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -391,6 +401,8 @@ section{
     border-radius: .5rem;
     position: relative;
     background:var(--main);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .roadmap .slide .fa-quote-right{
@@ -401,16 +413,21 @@ section{
     color: var(--Tusk);
 }
 
+.user-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .roadmap .slide .user{
     display:flex;
     gap: 1.5rem;
     align-items: center;
-    padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 .roadmap .slide .user img{
-    height:7rem;
-    width:7rem;
+    height:20rem;
+    width:20rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -418,7 +435,8 @@ section{
 .roadmap .slide .user h3{
     color: var(--Tusk);
     font-size: 2rem;
-    padding-bottom:5rem;
+    padding-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .roadmap .slide .user i{
@@ -430,39 +448,63 @@ section{
     font-size: 1.5rem;
     line-height: 1.8;
     color:white;
+    margin: 0 auto;
+    width: 400px;
 }
 
 
-.teams .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+.team-container{
+    display: flex;
+    flex-direction: column;
+
 }
 
-.teams .box-container .box{
+.team-container .box{
+    color: white;
     border: 0.1rem solid rgba(0,0,0,0.7);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
     background:var(--main);
 }
 
-.teams .box-container .box .img{
-    height:27rem;
-    width:27rem;
-    overflow:hidden;
-}
-
-.teams .box-container .box .img:hover img{
-    transform:scale(1.2);
-}
-
 .teams .box-container .box .img img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
+    max-width: 0.5rem;
+    height: 0.5rem;
 }
 
-.teams .box-container .box .content{
+.teamImg {
+    width: 150px;
+    height: 150px;
+    border-radius:75px;
+}
+
+.team-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-icon {
+    margin-right: 15px;
+}
+
+.team-box {
+    margin: 20px 0;
+}
+
+
+
+.team-content {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.team-content p {
+    font-size: 15px;
+}
+
+.teams .team-container .box .content{
     padding:2rem 1.5rem;
+    text-align: center;
 }
 
 .teams .box-container .box .content .icons{
@@ -538,49 +580,55 @@ section{
 }
 
 
+#footer {
+    margin:0;
+}
+
+
 .footer{
     background:var(--main);
 }
 
-.footer .box-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+.footer-box-container{
+    display:flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:10rem; */
+    justify-content: space-around;
 }
 
-.footer .box-container .box h3{
+.footer .footer-box-container .box h3{
     font-size: 2.2rem;
     color: var(--Tusk);
     padding:1rem 0;
 }
 
-.footer .box-container .box p{
+.footer .footer-box-container .box p{
     font-size: 1.5rem;
     color: var(--Tusk);
     padding-bottom: .5rem;
 }
 
-.footer .box-container .box a{
+.footer .footer-box-container .box a{
     font-size: 1.4rem;
     color: var(--Tusk);
     padding: 1rem 0;
     display:block;
 }
 
-.footer .box-container .box a:hover{
+.footer .footer-box-container .box a:hover{
     color: #fff;
 }
 
-.footer .box-container .box a:hover i{
+.footer .footer-box-container .box a:hover i{
     padding-right: 2rem;
 }
 
-.footer .box-container .box a i{
+.footer .footer-box-container .box a i{
     padding-right:.5rem;
     color: var(--Tusk);
 }
 
-.footer .box-container .box form input[type="text"]{
+.footer .footer-box-container .box form input[type="text"]{
     width: 100%;
     padding:1rem 1.2rem;
     font-size: 1.6rem;
@@ -589,7 +637,7 @@ section{
     text-transform: none;
 }
 
-.footer .box-container .box .payments{
+.footer .footer-box-container .box .payments{
     width: 100%;
     margin-top: 2rem;
 }
@@ -662,7 +710,7 @@ section{
         font-size: 50%;
     }
     .home .slides-container .slide .content .slideimg img{
-        display: none;
+        /* display: none; */
     }
     .home .slides-container .slide .content h3{
         font-size:1rem;

@@ -1,10 +1,13 @@
-
+import BuildingCoop from '../images/buildingcoop.png'
+import LayingSeason from '../images/layingseason.png'
+import Staking from '../images/staking.png'
+import BabyCluck from '../images/babycluck.png'
 
 const Roadmap = () => {
     return (
         <section>
             <section>
-                <h1 className="title">roadmap</h1>
+                <h1 className="title">Roadmap</h1>
             </section>
 
             <section className="roadmap" id="roadmap">
@@ -13,8 +16,8 @@ const Roadmap = () => {
 
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide11.png"/>
                                 <div className="user-info">
+                                    <img src={BuildingCoop}/>
                                     <h3>Building the coop</h3>
                                 </div>
                             </div>
@@ -33,8 +36,8 @@ const Roadmap = () => {
 
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide44.png"/>
                                 <div className="user-info">
+                                    <img src={LayingSeason}/>
                                     <h3>Laying Season</h3>
                                 </div>
                             </div>
@@ -46,8 +49,8 @@ const Roadmap = () => {
                         </div>
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide55.png"/>
                                 <div className="user-info">
+                                    <img src={Staking}/>
                                     <h3>Staking for $EGGS</h3>
                                 </div>
                             </div>
@@ -59,8 +62,8 @@ const Roadmap = () => {
 
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide66.png"/>
                                 <div className="user-info">
+                                    <img src="img/slide66.png"/>
                                     <h3>MERCH</h3>
                                 </div>
                             </div>
@@ -69,9 +72,9 @@ const Roadmap = () => {
 
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide71.png"/>
                                 <div className="user-info">
-                                    <h3>Baby Cluck available for staked Cluckies</h3>
+                                    <img src={BabyCluck}/>
+                                    <h3>Baby Clucks available for staked Cluckies</h3>
                                 </div>
                             </div>
                             <p>
@@ -83,8 +86,8 @@ const Roadmap = () => {
 
                         <div className="swiper-slide slide">
                             <div className="user">
-                                <img src="img/slide99.jpeg"/>
                                 <div className="user-info">
+                                    <img src="img/slide99.jpeg"/>
                                     <h3>ROADMAP 2.Cluck</h3>
                                 </div>
                             </div>

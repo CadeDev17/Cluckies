@@ -2,7 +2,7 @@ const Faq = () => {
     return (
         <section>
             <section id="faq">
-                <h1 className="title">FAQ <span>question</span> <a href="#">our medium page</a></h1>
+                <h1 className="title">FAQ<a href="#">Our medium page</a></h1>
             </section>
 
             <section className="faq">
@@ -23,6 +23,12 @@ const Faq = () => {
                         <i className="fas fa-cookie"></i>
                         <h3>What is the total supply?</h3>
                         <p>1,777</p>
+                    </div>
+
+                    <div className="icons">
+                        <i className="fas fa-egg"></i>
+                        <h3>How many clucks do we give about your opinion?</h3>
+                        <p>none.</p>
                     </div>
                 </div>
             </section>

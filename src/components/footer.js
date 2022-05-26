@@ -3,9 +3,9 @@ const Footer = () => {
     return (
         <footer>
             <section className="footer">
-                <div className="box-container">
+                <div className="footer-box-container">
                     <div className="box">
-                        <h3>quick links</h3>
+                        <h3>Quick Links</h3>
                             <a href="#home"> <i className="fa fa-arrow-right"></i>Home</a>
                             <a href="#mint"> <i className="fa fa-arrow-right"></i>Mint</a>
                             <a href="#rarities"> <i className="fa fa-arrow-right"></i>Rarities</a>
@@ -15,7 +15,7 @@ const Footer = () => {
                     </div>
 
                     <div className="box">
-                        <h3>extra links</h3>
+                        <h3>Extra Links</h3>
                             <a href="#"> <i className="fa fa-arrow-right"></i> Our Notion Page</a>
                             <a href="#"> <i className="fa fa-arrow-right"></i> IMB Labs</a>
                             <a href="#"> <i className="fa fa-arrow-right"></i> OpenSea</a>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
 
                     <div className="box">
-                        <h3>follow us</h3>
+                        <h3>Follow Us</h3>
                         <a href="#"> <i className="fab fa-twitter"></i> twitter</a>
                         <a href="#"> <i className="fab fa-instagram"></i> instagram</a>
                         <a href="#"> <i className="fab fa-discord"></i> Discord</a>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </section>
 
-            <section className="credit">created by <span>IMB Labs ®</span></section>
+            <section className="credit">Created by <span>IMB Labs ®</span></section>
         </footer>
     );
 }

@@ -7,7 +7,6 @@ import Web3 from 'web3'
 import twitter from '../images/socials/twitter.svg'
 import instagram from '../images/socials/instagram.svg'
 import opensea from '../images/socials/opensea.svg'
-import showcase from '../images/showcase.png'
 import '../App.css'
 
 // Import Components
@@ -19,6 +18,7 @@ import Roadmap from './Roadmap'
 import ChickenCoop from './Chickencoop'
 import Rarities from './Rarities'
 import Home from './Home'
+import Mint from './Mint'
 
 
 // Import ABI + Config
@@ -174,9 +174,15 @@ function App() {
 	return (
 		<section>
 
-			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
-
-			<Home />
+			{/* <Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} /> */}
+			<Home/>
+			<Mint/>
+			<ChickenCoop/>
+			<Roadmap/>
+			<Rarities/>
+			<Team/>
+			<Faq/>
+			<Footer/>
 			
 		</section>
 	)

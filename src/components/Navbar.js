@@ -1,4 +1,4 @@
-import logo from '../images/Moonfrenzbanner.png'
+import logo from '../images/main.png'
 
 const Navbar = ({ web3Handler, account, explorerURL }) => {
     return (
