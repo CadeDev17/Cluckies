@@ -7,6 +7,7 @@ import Web3 from 'web3'
 import twitter from '../images/socials/twitter.svg'
 import instagram from '../images/socials/instagram.svg'
 import opensea from '../images/socials/opensea.svg'
+import CluckieCollage from '../images/Mint.png'
 import '../App.css'
 
 // Import Components
@@ -18,7 +19,6 @@ import Roadmap from './Roadmap'
 import ChickenCoop from './Chickencoop'
 import Rarities from './Rarities'
 import Home from './Home'
-import Mint from './Mint'
 
 
 // Import ABI + Config
@@ -174,9 +174,25 @@ function App() {
 	return (
 		<section>
 
-			{/* <Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} /> */}
+			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
 			<Home/>
-			<Mint/>
+			<section class="banner-container" id="mint">
+				<div class="banner">
+					<img src={CluckieCollage}/>
+					<div class="mint-content">
+						<h3>Supply: 1,777</h3>
+						<h3>Price: 0.02 ETH</h3>
+						<h3>Free Mint: 77</h3>
+						{/* <a href="#" class="btn">MINT NOW</a> */}
+
+						{isMinting ? (
+							<Spinner animation="border" className='p-3 m-2' />
+						) : (
+							<button onClick={mintNFTHandler} className='mint-button'>Mint</button>
+						)}
+					</div>
+				</div>
+			</section>
 			<ChickenCoop/>
 			<Roadmap/>
 			<Rarities/>

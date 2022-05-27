@@ -31,6 +31,34 @@ section{
     padding: 3rem 9%;
 }
 
+.nav-btn {
+    background: #5DFDFE;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: white;
+    box-shadow: 0px 0px 100px gold;
+}
+
+.mint-button {
+    background: #5DFDFE;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.mint-button:hover {
+    color: white;
+    box-shadow: 0px 0px 100px gold;
+}
+
 .title{
     display: flex;
     align-items: center;
@@ -152,6 +180,7 @@ section{
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-top: 50px;
 }
 
 .homeImg {
@@ -257,9 +286,10 @@ section{
 }
 
 .banner-container .banner .mint-content h3{
-    font-size: 3rem;
-    color: white;
-    text-shadow:0 0.5rem 1rem rgba(0,0,0,0.7);
+    font-size: 3.5rem;
+    color: red;
+    font-weight: bold;
+    text-shadow:-3px 0px 1px black;
 }
 
 .banner-container .banner .mint-content span{

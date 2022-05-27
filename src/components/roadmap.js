@@ -44,8 +44,7 @@ const Roadmap = () => {
                             <p>- Date: tbd</p>
                             <p>- Supply: 1,777</p>
                             <p>- Free-Mint Supply: 77</p>
-                            <p>- Presale: 700 (0.01 ETH)</p>
-                            <p>- Public Sale: 1,000 (0.02 ETH)</p>
+                            <p>- Public Sale: 1,700 (0.02 ETH)</p>
                         </div>
                         <div className="swiper-slide slide">
                             <div className="user">
