@@ -4,9 +4,6 @@ import Countdown from 'react-countdown'
 import Web3 from 'web3'
 
 // Import Images + CSS
-import twitter from '../images/socials/twitter.svg'
-import instagram from '../images/socials/instagram.svg'
-import opensea from '../images/socials/opensea.svg'
 import CluckieCollage from '../images/Mint.png'
 import '../App.css'
 

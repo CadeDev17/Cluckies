@@ -1,4 +1,3 @@
-
 const Footer = () => {
     return (
         <footer>
@@ -16,13 +15,13 @@ const Footer = () => {
 
                     <div className="box">
                         <h3>Extra Links</h3>
-                            <a href="https://medium.com/@cluckies/are-you-going-to-be-a-lucky-mother-clucker-c6bf7ab5adf0"> <i className="fa fa-arrow-right"></i> Medium Page</a>
-                            <a href="https://opensea.io/"> <i className="fa fa-arrow-right"></i> OpenSea</a>
-                            <a href="https://etherscan.io/"> <i className="fa fa-arrow-right"></i> Etherscan</a>
-                            <a href="https://looksrare.org/"> <i className="fa fa-arrow-right"></i> Looks Rare</a>
-                            <a href="#home"> <i className="fa fa-arrow-right"></i> Cluck Labs</a>
+                        <a href="https://medium.com/@cluckies/are-you-going-to-be-a-lucky-mother-clucker-c6bf7ab5adf0"> <i className="fa fa-arrow-right"></i> Medium Page</a>
+                        <a href="https://opensea.io/"> <i className="fa fa-arrow-right"></i> OpenSea</a>
+                        <a href="https://etherscan.io/"> <i className="fa fa-arrow-right"></i> Etherscan</a>
+                        <a href="https://looksrare.org/"> <i className="fa fa-arrow-right"></i> Looks Rare</a>
+                        <a href="#home"> <i className="fa fa-arrow-right"></i> Cluck Labs</a>
                     </div>
-
+                    
                     <div className="box">
                         <h3>Follow Us</h3>
                         <a href="https://twitter.com/cluckiesxyz"> <i className="fab fa-twitter"></i> twitter</a>
