@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer>
-            <section className="footer">
+            <section className="footer" id="footer" >
                 <div className="footer-box-container">
                     <div className="box">
                         <h3>Quick Links</h3>
@@ -16,24 +16,24 @@ const Footer = () => {
 
                     <div className="box">
                         <h3>Extra Links</h3>
-                            <a href="#"> <i className="fa fa-arrow-right"></i> Our Notion Page</a>
-                            <a href="#"> <i className="fa fa-arrow-right"></i> IMB Labs</a>
-                            <a href="#"> <i className="fa fa-arrow-right"></i> OpenSea</a>
-                            <a href="#"> <i className="fa fa-arrow-right"></i> terms or use</a>
-                            <a href="#"> <i className="fa fa-arrow-right"></i> policy</a>
+                            <a href="https://medium.com/@cluckies/are-you-going-to-be-a-lucky-mother-clucker-c6bf7ab5adf0"> <i className="fa fa-arrow-right"></i> Medium Page</a>
+                            <a href="https://opensea.io/"> <i className="fa fa-arrow-right"></i> OpenSea</a>
+                            <a href="https://etherscan.io/"> <i className="fa fa-arrow-right"></i> Etherscan</a>
+                            <a href="https://looksrare.org/"> <i className="fa fa-arrow-right"></i> Looks Rare</a>
+                            <a href="#home"> <i className="fa fa-arrow-right"></i> Cluck Labs</a>
                     </div>
 
                     <div className="box">
                         <h3>Follow Us</h3>
-                        <a href="#"> <i className="fab fa-twitter"></i> twitter</a>
-                        <a href="#"> <i className="fab fa-instagram"></i> instagram</a>
-                        <a href="#"> <i className="fab fa-discord"></i> Discord</a>
-                        <a href="#"> <i className="fab fa-tiktok"></i> Tik Tok</a>
+                        <a href="https://twitter.com/cluckiesxyz"> <i className="fab fa-twitter"></i> twitter</a>
+                        <a href="https://www.instagram.com/cluckiesnft/"> <i className="fab fa-instagram"></i> instagram</a>
+                        <a href="https://discord.gg/ZHEpvSVCxt"> <i className="fab fa-discord"></i> Discord</a>
+                        <a href="https://www.tiktok.com/@cluckiesnft"> <i className="fab fa-tiktok"></i> Tik Tok</a>
                     </div>
                 </div>
             </section>
 
-            <section className="credit">Created by <span>IMB Labs ®</span></section>
+            <section className="credit">Created by <span>Cluck Labs ®</span></section>
         </footer>
     );
 }

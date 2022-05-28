@@ -15,8 +15,8 @@ const Home = () => {
                             <img className="homeImg" src={homeImg} alt=""/>
                         </div>
                         <h3>Hey clucker, make sure youre following us on twitter and clucking around in our discord with the rest of the mothercluckers</h3>
-                            <a href="#" className="btn">Twitter</a>
-                            <a href="#" className="btn">Discord</a>
+                            <a href="https://twitter.com/cluckiesxyz" className="btn">Twitter</a>
+                            <a href="https://discord.gg/ZHEpvSVCxt" className="btn">Discord</a>
                     </div>
                 </div>
             </div>

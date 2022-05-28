@@ -2,6 +2,8 @@ import BuildingCoop from '../images/buildingcoop.png'
 import LayingSeason from '../images/layingseason.png'
 import Staking from '../images/staking.png'
 import BabyCluck from '../images/babycluck.png'
+import Merch from '../images/merch.png'
+import Roadmap2 from '../images/Roadmap2.png'
 
 const Roadmap = () => {
     return (
@@ -62,7 +64,7 @@ const Roadmap = () => {
                         <div className="swiper-slide slide">
                             <div className="user">
                                 <div className="user-info">
-                                    <img src="img/slide66.png"/>
+                                    <img src={Merch}/>
                                     <h3>MERCH</h3>
                                 </div>
                             </div>
@@ -86,7 +88,7 @@ const Roadmap = () => {
                         <div className="swiper-slide slide">
                             <div className="user">
                                 <div className="user-info">
-                                    <img src="img/slide99.jpeg"/>
+                                    <img src={Roadmap2}/>
                                     <h3>ROADMAP 2.Cluck</h3>
                                 </div>
                             </div>

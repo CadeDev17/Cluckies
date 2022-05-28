@@ -428,7 +428,7 @@ section{
     padding:2rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
     border: 0.1rem solid rgba(0,0,0,0.7);
-    border-radius: .5rem;
+    border-radius: 500px;
     position: relative;
     background:var(--main);
     margin-bottom: 10px;
@@ -446,6 +446,10 @@ section{
 .user-info {
     text-align: center;
     margin: 0 auto;
+}
+
+.user-info h3 {
+    margin-top: 10px;
 }
 
 .roadmap .slide .user{
@@ -502,8 +506,8 @@ section{
 }
 
 .teamImg {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius:75px;
 }
 
@@ -526,6 +530,14 @@ section{
     text-align: center;
     width: 500px;
     margin: 0 auto;
+}
+
+.team-content .icons {
+    margin-top: 10px;
+}
+
+.team-content h3 {
+    font-size: 20px;
 }
 
 .team-content p {

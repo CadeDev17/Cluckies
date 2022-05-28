@@ -185,11 +185,11 @@ function App() {
 						<h3>Free Mint: 77</h3>
 						{/* <a href="#" class="btn">MINT NOW</a> */}
 
-						{isMinting ? (
+						{/* {isMinting ? (
 							<Spinner animation="border" className='p-3 m-2' />
 						) : (
 							<button onClick={mintNFTHandler} className='mint-button'>Mint</button>
-						)}
+						)} */}
 					</div>
 				</div>
 			</section>

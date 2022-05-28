@@ -26,7 +26,7 @@ const Team = () => {
                                 <a className="fas fa-user">Cluckie Founder / Artist</a>
                             </div>
                             <h3>Master Cluck</h3>
-                            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                            <p>I am here to take Cluckies to the COOP that just so happens to be on the moon. I will use 'cluck' in every sentence. Cluck it.</p>
                         </div>
                     </div>
 
@@ -40,7 +40,7 @@ const Team = () => {
                                 <a className="fas fa-user">Cluckster Marketer</a>
                             </div>
                             <h3>Super Cluck</h3>
-                            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                            <p>Its a cluck, no its a cluck!, no... its Super Cluck. Here to cluck'n market </p>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@ const Team = () => {
                                 <a className="fas fa-user">Community  Manacluck</a>
                             </div>
                             <h3>Community Cluck</h3>
-                            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                            <p>I am the best at gathering the cluckers to get them back in the coop before the fox herd comes to kill them!</p>
                         </div>
                     </div>
 
