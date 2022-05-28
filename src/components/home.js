@@ -2,7 +2,7 @@ import homeImg from '../images/cluckieshome.png'
 import fontLogo from '../images/main.png'
 
 
-const Home = () => {
+const home = () => {
     return (
         <section className="home" id="home">
             <div className="slides-container">
@@ -24,5 +24,5 @@ const Home = () => {
     )
 }
 
-export default Home
+export default home
 

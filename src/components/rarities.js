@@ -7,7 +7,7 @@ import Extraordinary from '../images/extraordinary.png'
 import Questionmark from '../images/questionmark.png'
 
 
-const Rarities = () => {
+const rarities = () => {
     return (
         <section>
             <section className="story" id="rarities">
@@ -162,4 +162,4 @@ const Rarities = () => {
     )
 }
 
-export default Rarities 
+export default rarities 

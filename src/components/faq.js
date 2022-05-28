@@ -1,4 +1,4 @@
-const Faq = () => {
+const faq = () => {
     return (
         <section>
             <section id="faq">
