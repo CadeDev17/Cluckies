@@ -8,7 +8,7 @@ import CluckieCollage from '../images/Mint.png'
 import '../App.css'
 
 // Import Components
-import Navbar from './Navbar'
+import Navbar from './navbar'
 import Footer from './footer'
 import Faq from './faq'
 import Team from './team'
