@@ -5,7 +5,7 @@ import communityManager from '../images/communitymanager.png'
 import Marketer from '../images/royalcluckie.png'
 
 
-const team = () => {
+const Team = () => {
     return (
         <section>
             <section className="teams">
@@ -96,4 +96,4 @@ const team = () => {
     );
 }
 
-export default team
+export default Team

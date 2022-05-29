@@ -1,4 +1,4 @@
-const footer = () => {
+const Footer = () => {
     return (
         <footer>
             <section className="footer" id="footer" >
@@ -37,5 +37,5 @@ const footer = () => {
     );
 }
 
-export default footer
+export default Footer
 

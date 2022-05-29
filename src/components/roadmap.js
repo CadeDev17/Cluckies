@@ -5,7 +5,7 @@ import BabyCluck from '../images/babycluck.png'
 import Merch from '../images/merch.png'
 import Roadmap2 from '../images/Roadmap2.png'
 
-const roadmap = () => {
+const Roadmap = () => {
     return (
         <section>
             <section>
@@ -102,4 +102,4 @@ const roadmap = () => {
     );
 }
 
-export default roadmap
+export default Roadmap

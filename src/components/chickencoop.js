@@ -1,6 +1,6 @@
 import coopImg from '../images/Coop.png'
 
-const chickencoop = () => {
+const Chickencoop = () => {
     return (
         <section>
             <section id="chickencoop">
@@ -27,4 +27,4 @@ const chickencoop = () => {
     );
 }
 
-export default chickencoop
+export default Chickencoop
