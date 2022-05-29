@@ -22,7 +22,7 @@ import Home from './home'
 import Moon_Frenz from '../abis/Moon_Frenz.json'
 import config from '../config.json'
 
-function App() {
+function app() {
 	const [web3, setWeb3] = useState(null)
 	const [openPunks, setOpenPunks] = useState(null)
 
@@ -201,4 +201,4 @@ function App() {
 	)
 }
 
-export default App
+export default app
