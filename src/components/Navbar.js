@@ -1,5 +1,5 @@
 
-const navbar = ({ web3Handler, account, explorerURL }) => {
+const Navbar = ({ web3Handler, account, explorerURL }) => {
     return (
         <nav className="navbar fixed-top mx-3">
             <header className="header">
@@ -38,4 +38,4 @@ const navbar = ({ web3Handler, account, explorerURL }) => {
     )
 }
 
-export default navbar;
+export default Navbar;

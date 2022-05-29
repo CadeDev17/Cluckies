@@ -8,7 +8,7 @@ import CluckieCollage from '../images/Mint.png'
 import '../App.css'
 
 // Import Components
-import Navbar from './navbar'
+import Navbar from './Navbar'
 import Footer from './footer'
 import Faq from './faq'
 import Team from './team'
@@ -22,7 +22,7 @@ import Home from './home'
 import Moon_Frenz from '../abis/Moon_Frenz.json'
 import config from '../config.json'
 
-function app() {
+function App() {
 	const [web3, setWeb3] = useState(null)
 	const [openPunks, setOpenPunks] = useState(null)
 
@@ -201,4 +201,4 @@ function app() {
 	)
 }
 
-export default app
+export default App
