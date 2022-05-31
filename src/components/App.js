@@ -9,13 +9,13 @@ import '../App.css'
 
 // Import Components
 import Navbar from './Navbar'
-import Footer from './Footer'
-import Faq from './Faq'
-import Team from './Team'
-import Roadmap from './Roadmap'
-import ChickenCoop from './Chickencoop'
-import Rarities from './Rarities'
-import Home from './Home'
+import Footer from './footer'
+import Faq from './faq'
+import Team from './team'
+import Roadmap from './roadmap'
+import ChickenCoop from './chickencoop'
+import Rarities from './rarities'
+import Home from './home'
 
 
 // Import ABI + Config
