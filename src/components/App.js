@@ -17,10 +17,26 @@ import ChickenCoop from './chickencoop'
 import Rarities from './rarities'
 import Home from './home'
 
-
 // Import ABI + Config
 import Moon_Frenz from '../abis/Moon_Frenz.json'
 import config from '../config.json'
+
+
+// function mintAmount({ setMintCount }) {
+// 	const [mintCount, setMintCount] = useState(0)
+
+// 	return (
+// 		<input 
+// 			class="mint-amount" 
+// 			type="number" 
+// 			placeholder="1-10" 
+// 			min="1" 
+// 			max="10" 
+// 			onChange={(e) => setMintCount(e.target.value)}>
+// 		</input>
+// 	);
+// }
+
 
 function App() {
 	const [web3, setWeb3] = useState(null)
@@ -130,6 +146,8 @@ function App() {
 			return
 		}
 
+
+
 		// Mint NFT
 		if (openPunks && account) {
 			setIsMinting(true)
@@ -170,33 +188,31 @@ function App() {
 
 	return (
 		<section>
-
 			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
-			<Home/>
-			<section class="banner-container" id="mint">
-				<div class="banner">
-					<img src={CluckieCollage}/>
-					<div class="mint-content">
-						<h3>Supply: 1,777</h3>
-						<h3>Price: 0.02 ETH</h3>
-						<h3>Free Mint: 77</h3>
-						{/* <a href="#" class="btn">MINT NOW</a> */}
-
-						{/* {isMinting ? (
-							<Spinner animation="border" className='p-3 m-2' />
-						) : (
-							<button onClick={mintNFTHandler} className='mint-button'>Mint</button>
-						)} */}
+			<div id="main--container">
+				<Home/>
+				<section class="banner-container" id="mint">
+					<div class="banner">
+						<img src={CluckieCollage}/>
+						<div class="mint-content">
+							<h3>Supply: 1,777</h3>
+							<h3>Free Mint: 77</h3>
+							{/* <mintAmount setMintCount={setMintCount} /> */}
+							{/* {isMinting ? (
+								<Spinner animation="border" className='p-3 m-2' />
+							) : (
+								<button onClick={mintNFTHandler} className='mint-button'>Mint</button>
+							)} */}
+						</div>
 					</div>
-				</div>
-			</section>
-			<ChickenCoop/>
-			<Roadmap/>
-			<Rarities/>
-			<Team/>
-			<Faq/>
-			<Footer/>
-			
+				</section>
+				<ChickenCoop/>
+				<Roadmap/>
+				<Rarities/>
+				<Team/>
+				<Faq/>
+				<Footer/>
+			</div>
 		</section>
 	)
 }

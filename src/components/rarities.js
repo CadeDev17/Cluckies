@@ -10,8 +10,8 @@ import Questionmark from '../images/questionmark.png'
 const Rarities = () => {
     return (
         <section>
+            <h1 className="title"><span>Rarities</span><a href="#">view on opensea</a> </h1>
             <section className="story" id="rarities">
-                <h1 className="title"><span>Rarities</span><a href="#">view on opensea</a> </h1>
 
                 <div className="box-container">
 

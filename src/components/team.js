@@ -40,7 +40,7 @@ const Team = () => {
                                 <a className="fas fa-user">Cluckster Marketer</a>
                             </div>
                             <h3>Super Cluck</h3>
-                            <p>Its a cluck, no its a cluck!, no... its Super Cluck. Here to cluck'n market </p>
+                            <p>Its a cluck, no its a cluck!, no... its Super Cluck. Here to cluck'n market this bitch to the moon</p>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@ const Team = () => {
                                 <a className="fas fa-user">Community  Manacluck</a>
                             </div>
                             <h3>Community Cluck</h3>
-                            <p>I am the best at gathering the cluckers to get them back in the coop before the fox herd comes to kill them!</p>
+                            <p>Bringing all the cluckers together so we can all be one big happy cluck'n family</p>
                         </div>
                     </div>
 
@@ -82,9 +82,7 @@ const Team = () => {
                                 <a className="fas fa-user">Cluckchain  Developer</a>
                                 <h3>Cluck'n Dev</h3>
                                 <p>
-                                    I have been clucking around in the web3 space for about 5 years now as 
-                                    a full time degen. 3 years ago I fell in love with the tech and never looked back.
-                                    Cluck Cluck MotherCluckers!
+                                    Full time cluckchain developer. Part time Mother Clucker ;)
                                 </p>
                             </div>    
                         </div>

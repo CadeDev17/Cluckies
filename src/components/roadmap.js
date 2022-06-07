@@ -16,7 +16,7 @@ const Roadmap = () => {
                 <div className="swiper mySwiper roadmap-slider">
                     <div className="swiper-wrapper wrapper">
 
-                        <div className="swiper-slide slide">
+                        <div className="swiper-slide slide left-align">
                             <div className="user">
                                 <div className="user-info">
                                     <img src={BuildingCoop}/>
@@ -36,7 +36,7 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div className="swiper-slide slide">
+                        <div className="swiper-slide slide right-align">
                             <div className="user">
                                 <div className="user-info">
                                     <img src={LayingSeason}/>
@@ -61,7 +61,7 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div className="swiper-slide slide">
+                        <div className="swiper-slide slide right-align">
                             <div className="user">
                                 <div className="user-info">
                                     <img src={Merch}/>
@@ -85,7 +85,7 @@ const Roadmap = () => {
                             </p>
                         </div>
 
-                        <div className="swiper-slide slide">
+                        <div className="swiper-slide slide right-align">
                             <div className="user">
                                 <div className="user-info">
                                     <img src={Roadmap2}/>
