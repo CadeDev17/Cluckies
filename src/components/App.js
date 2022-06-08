@@ -187,9 +187,9 @@ function App() {
 	}, [account]);
 
 	return (
-		<section>
+		<section id="main--container">
 			<Navbar web3Handler={web3Handler} account={account} explorerURL={explorerURL} />
-			<div id="main--container">
+			<div id="content--container">
 				<Home/>
 				<section class="banner-container" id="mint">
 					<div class="banner">

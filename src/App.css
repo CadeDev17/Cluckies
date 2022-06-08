@@ -615,8 +615,8 @@ section{
     }
 
     #main--container {
-        width: 550px;
-        margin-top: 250px;
+        margin-top: 220px;
+        overflow-x: hidden;
     }
 
     .roadmap .slide .user img {
@@ -652,5 +652,8 @@ section{
         align-items: center;
     }
 
+    .team-content {
+        width: 100%;
+    }
 
 }
