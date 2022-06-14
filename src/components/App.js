@@ -16,26 +16,11 @@ import Roadmap from './roadmap'
 import ChickenCoop from './chickencoop'
 import Rarities from './rarities'
 import Home from './home'
+import mintAmount from './mintamount'
 
 // Import ABI + Config
 import Moon_Frenz from '../abis/Moon_Frenz.json'
 import config from '../config.json'
-
-
-// function mintAmount({ setMintCount }) {
-// 	const [mintCount, setMintCount] = useState(0)
-
-// 	return (
-// 		<input 
-// 			class="mint-amount" 
-// 			type="number" 
-// 			placeholder="1-10" 
-// 			min="1" 
-// 			max="10" 
-// 			onChange={(e) => setMintCount(e.target.value)}>
-// 		</input>
-// 	);
-// }
 
 
 function App() {
@@ -60,6 +45,8 @@ function App() {
 
 	const [counter, setCounter] = useState(7)
 	const [isCycling, setIsCycling] = useState(false)
+
+	const [mintCount, setMintCount] = useState(0)
 
 	const loadBlockchainData = async (_web3, _account, _networkId) => {
 		// Fetch Contract, Data, etc.
@@ -153,7 +140,7 @@ function App() {
 			setIsMinting(true)
 			setIsError(false)
 
-			await openPunks.methods.mint(1).send({ from: account, value: 0 })
+			await openPunks.methods.mint(mintCount).send({ from: account, value: (mintCount * 20000000000000000) })
 				.on('confirmation', async () => {
 					const maxSupply = await openPunks.methods.maxSupply().call()
 					const totalSupply = await openPunks.methods.totalSupply().call()
@@ -197,7 +184,7 @@ function App() {
 						<div class="mint-content">
 							<h3>Supply: 1,777</h3>
 							<h3>Free Mint: 77</h3>
-							{/* <mintAmount setMintCount={setMintCount} /> */}
+							<mintAmount setMintCount={setMintCount} />
 							{/* {isMinting ? (
 								<Spinner animation="border" className='p-3 m-2' />
 							) : (
